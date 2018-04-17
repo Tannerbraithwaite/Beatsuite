@@ -1,0 +1,25 @@
+<ion-header style="clear: both;">
+
+  <ion-navbar>
+    <ion-title id="wrapper"><p (click)="cancel()" class="arrow">&#8592;</p><p class="bookingtitle">{{ 'Booking' | translate }}</p></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content>
+<hr size="1" NOSHADE class="hrclass">
+<div>
+  <p class="bookingrequesttext">
+    Nicely Done, *Temp user*!
+  </p>
+</div>
+<div>
+  <p class="bookingrequesttext2">
+    You are all set to book a session with *Temp user name*
+  </p>
+</div>
+  <button ion-button (click)="userProfile()"color="primary" block class="continuebutton">Finish booking request</button>
+
+</ion-content>

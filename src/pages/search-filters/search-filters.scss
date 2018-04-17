@@ -1,0 +1,147 @@
+page-search-filters {
+  .exitButton{
+    color:#fff;
+    background-color: #222;
+    padding-left:8px;
+    display:inline-block;
+    float:left;
+  }
+
+  .headerscript{
+    text-align:center;
+    display:inline-block;
+    margin:0;
+    color:#fff;
+    background-color: #222;
+    font-size:28px;
+  }
+
+  .item-md.item-block .item-inner {
+    padding-right:0;
+}
+
+.item-ios.item-block .item-inner {
+    padding-right:0;
+}
+
+  .navButton{
+    color:#fff;
+    font-size: 18px;
+    border-radius:24px 23px 23px 23px;
+    background: linear-gradient(to right, #02cecc 0%, #630ac0 100%);
+    margin-top:10%;
+  }
+
+  .genre{
+    display: inline-block;
+    background:#333;
+    margin:10px 0 0 2%;
+    flex-grow: 1;
+    height:36px;
+  }
+
+  .col{
+    text-align:center;
+  }
+
+  .button-block{
+    width:90%;
+  }
+
+  .range-md .range-slider {
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.range-ios .range-slider {
+    margin-right: 3%;
+    margin-left: 3%;
+}
+  .genreSelected{
+    display: inline-block;
+    background:linear-gradient(to right, #02cecc 0%, #630ac0 100%);
+    margin:10px 0 0 2%;
+    flex-grow: 1;
+    height: 36px;
+  }
+
+  .range-ios .range-knob {
+    left: 7px;
+    top: 13px;
+    width: 16px;
+    height: 16px;
+    background: #666666;
+}
+
+.range-md .range-knob {
+  left: 7px;
+  top: 13px;
+  width: 16px;
+  height: 16px;
+  background: #666666;
+}
+
+.range-ios .range-pin{
+  color:#fff;
+  font-size:18px;
+}
+
+
+  .range-ios .range-bar-active {
+    background: linear-gradient(to right, #02cecc 0%, #630ac0 100%);;
+}
+  .range-md .range-bar-active {
+    background: linear-gradient(to right, #02cecc 0%, #630ac0 100%);;
+  }
+  .filterHeader{
+    color:#fff;
+    text-align:center;
+    padding-top:3%;
+    font-size:28px;
+    background-color:#000;
+    margin: 0 0 0 0;
+  }
+  .filterHeader2{
+    color:#fff;
+    text-align:center;
+    padding-top:3%;
+    font-size:28px;
+    background-color:#222;
+    margin: 0 0 0 0;
+  }
+
+  .item-ios.item-block .item-inner {
+    padding-right: 0px;
+}
+  .rangescroll{
+    background-color:#000;
+    margin-left:1%;
+    margin-right:1%;
+  }
+  .rangescroll2{
+    background-color:#222;
+    margin-left:1%;
+    margin-right:1%;
+  }
+
+  .item-md{
+    background-color:#222;
+    padding-left:0;
+  }
+  .item-ios{
+    background-color:#222;
+    padding-left:0;
+  }
+
+  ion-title{
+    background-color:#222;
+  }
+
+  .toolbar-ios {
+    padding: 0;
+    min-height: 44px;
+}
+.toolbar-title-md {
+    padding: 0 4px;
+}
+}

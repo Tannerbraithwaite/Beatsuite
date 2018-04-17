@@ -1,0 +1,23 @@
+
+<ion-header style="border-bottom: 1px solid #fff">
+  <ion-title id="wrapper">
+    <p class="arrow" style="color:#fff;" (click)="cancel()"> &#8592;</p>
+    <p class="bookingtitle">{{ 'Add Hourly Rates' | translate }}</p>
+  </ion-title>
+</ion-header>
+
+
+<ion-content style="background:#000">
+  <ion-item style="background:#000;">
+    <img src="../assets/img/octagon.png" class="editNameLogo">
+  </ion-item>
+
+  <ion-label class="headerCenter">My Rates</ion-label>
+
+  <ion-item style="background:#000; border-bottom:1px solid #fff;">
+    <ion-input type="text" placeholder="$" class="inputbox" style="text-align:center; background-color:#000;"></ion-input>
+  </ion-item>
+
+<button ion-button block class="navButtonCreate">Save My Rates</button>
+
+</ion-content>

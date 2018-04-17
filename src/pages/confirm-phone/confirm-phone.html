@@ -1,0 +1,18 @@
+<ion-header style="clear: both;">
+
+  <ion-navbar>
+    <ion-title id="wrapper"><p class="arrow" (click)="cancel()">&#8592;</p><p class="bookingtitle">{{ 'Phone number' | translate }}</p></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content>
+<hr size="1" NOSHADE>
+  <ion-label class="bookingrequesttext">
+    Before Booking a session, please confirm your phone number.
+  </ion-label>
+  <ion-input type="number" placeholder="" class="inputbox" style="text-align:center"></ion-input>
+  <button ion-button color="primary" (click)="confirmCode()" block class="continuebutton">{{ 'Continue' | translate }}</button>
+</ion-content>

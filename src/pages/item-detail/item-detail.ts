@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { ItemCreatePage } from '../item-create/item-create';
 
 import { Items } from '../../providers/providers';
 
@@ -14,4 +15,7 @@ export class ItemDetailPage {
     this.item = navParams.get('item') || items.defaultItem;
   }
 
+  editPage() {
+    this.navCtrl.push(ItemCreatePage);
+  }
 }

@@ -1,0 +1,128 @@
+page-calendar {
+  ion-content {
+      background-color: #222 !important;
+      background-size: cover;
+      background-origin: center;
+      background-repeat: no-repeat;
+      background-image: none;
+  }
+.scroll-content {
+    padding: 0px;
+}
+
+  ion-title{
+    text-align:Left;
+    background-color: #222;
+    color:#fff;
+  }
+
+  small {
+    font-size: 75%;
+    font-weight: 100;
+}
+  ion-navbar{
+    background-color:#222;
+  }
+  .toolbar-ios ion-title {
+      padding: 0 0 1px;
+  }
+
+  .toolbar-title {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 100;
+  }
+  .toolbar-background-md {
+  background-color:#222;
+  }
+
+  .arrow{
+  float:left;
+  color:#fff;
+  font-size:26px;
+  padding: 0 0 0 5px;
+  margin:0;
+  position:absolute;
+
+  }
+
+  .bookingtitle{
+  text-align: center;
+  margin:0;
+  }
+
+  .inputbox{
+    font-size:14px;
+    color:#fff;
+    background-color:#000;
+    margin-left:15%;
+    width:70%;
+    margin-top:5%;
+    border-width:1px;
+    border-style: solid;
+    border-color:#fff;
+    border-radius:5px 5px 5px 5px;
+
+  }
+
+
+  .button-block{
+  font-size: 14px;
+  border-radius:24px 23px 23px 23px;
+  text-align:center;
+  color:#fff;
+  font-weight:100;
+  align:right;
+  background-color: rgba(0,0,0,.5);
+  height:36px;
+  width:70%;
+  margin-left: 15%;
+  }
+
+  .table-bordered[_ngcontent-c1] > thead[_ngcontent-c1] > tr[_ngcontent-c1] > th[_ngcontent-c1], .table-bordered[_ngcontent-c1] > tbody[_ngcontent-c1] > tr[_ngcontent-c1] > th[_ngcontent-c1], .table-bordered[_ngcontent-c1] > tfoot[_ngcontent-c1] > tr[_ngcontent-c1] > th[_ngcontent-c1], .table-bordered[_ngcontent-c1] > thead[_ngcontent-c1] > tr[_ngcontent-c1] > td[_ngcontent-c1], .table-bordered[_ngcontent-c1] > tbody[_ngcontent-c1] > tr[_ngcontent-c1] > td[_ngcontent-c1], .table-bordered[_ngcontent-c1] > tfoot[_ngcontent-c1] > tr[_ngcontent-c1] > td[_ngcontent-c1] {
+    border: 0px solid #ddd;
+}
+.table-bordered[_ngcontent-c1] {
+    border: 0px solid #ddd;
+}
+.monthview-current[_ngcontent-c1] {
+  background: #fff;
+  color: #000;
+  border-radius: 40%;
+}
+
+.monthview-selected[_ngcontent-c1] {
+    background: linear-gradient(to right, #02cecc 0%, #630ac0 100%);
+    color: white;
+    border-radius: 40%;
+}
+
+.content-ios {
+    color: #fff;
+    background-color: #999;
+}
+.toolbar-md-primary .toolbar-background-md {
+    background: #222;
+}
+
+.item-ios.item-block .item-inner {
+    padding-right: 8px;
+    border-bottom: 0;
+}
+
+.button-block{
+font-size: 22px;
+border-radius:24px 23px 23px 23px;
+text-align:center;
+color:#000;
+font-weight:100;
+background: linear-gradient(to right, #02cecc 0%, #630ac0 100%);;
+height:36px;
+width:70%;
+margin-left:15%;
+}
+
+[_nghost-c0] > div[_ngcontent-c0] {
+    height: 48%;
+}
+}

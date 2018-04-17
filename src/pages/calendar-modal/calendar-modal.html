@@ -1,0 +1,34 @@
+<ion-header style="border-bottom: 1px solid #666; background-color:#000;">
+  <ion-navbar color="primary">
+    <ion-buttons start>
+      <button ion-button icon-only (click)="cancel()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title style="font-weight:100; background-color:#000;">Event Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background-color:#000;">
+  <ion-list>
+
+    <ion-item class="eventtime">
+      <ion-label class="eventtext">Start</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY HH:mm" pickerFormat="MMM D:HH:mm" [(ngModel)]="event.startTime" [min]="minDate"></ion-datetime>
+    </ion-item>
+
+    <ion-item class="eventtime">
+      <ion-label class="eventtext">End</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY HH:mm" pickerFormat="MMM D:HH:mm" [(ngModel)]="event.endTime" [min]="minDate"></ion-datetime>
+    </ion-item>
+
+    <ion-item class="eventtime">
+      <ion-label>All Day?</ion-label>
+      <ion-checkbox [(ngModel)]="event.allDay" class="eventtext"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button full icon-left (click)="save()" class="addevent">
+    <ion-icon name="checkmark"></ion-icon> Request Booking
+  </button>
+</ion-content>

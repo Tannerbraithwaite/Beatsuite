@@ -1,3 +1,107 @@
 page-signup {
 
+  .signupHeader{
+    color:#fff;
+    padding-left:20%;
+    padding-right:20%;
+    padding-top:1%;
+    padding-bottom:5%;
+    font-weight:100;
+    text-align:center;
+    font-size:32px;
+  }
+
+  .signupArrow{
+    color:#fff;
+    padding-top:5%;
+    padding-left:5%;
+    font-weight:100;
+    font-size:32px;
+  }
+
+
+
+
+
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill {
+      transition: background-color 5000s ease-in-out 0s;
+      -webkit-text-fill-color: #999;
+      text-align:center;
+      margin: 0 54px 10% 54px;
+  }
+
+  ion-input, ion-textarea {
+      border-bottom: 1px solid #333;
+  }
+
+  ::-webkit-input-placeholder {
+   text-align: center;
+   margin: 0 54px 0 54px;
+   color:#fff;
+
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+   margin: 0 54px 0 54px;
+   color:#fff;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+   margin: 0 54px 0 54px;
+   color:#fff;
+}
+
+:-ms-input-placeholder {
+   text-align: center;
+   margin: 0 54px 0 54px;
+   color:#fff;
+}
+
+
+.text-input-md {
+    font-size: 22px;
+    width: 70%;
+    margin-left: 0;
+    border-bottom-width:1px solid #333;
+    margin:13px 0;
+}
+
+.text-input-ios {
+    font-size: 22px;
+    width: 70%;
+    margin-left: 0;
+    border-bottom-width:1px solid #333;
+    margin:13px 0;
+}
+
+
+.text-input-md{
+  border-width:0;
+  margin:13px 0;
+}
+
+  .navButton{
+    color:#fff;
+    font-size: 18px;
+    border-radius:24px 23px 23px 23px;
+    background-color:rgba(0,0,0,.5);
+    border-top: 1px solid #333;
+  }
+
+  .welcomeText{
+    color:#fff;
+    padding-left:20%;
+    padding-right:20%;
+    padding-top:1%;
+    padding-bottom:5%;
+    font-weight:100;
+    text-align:center;
+    font-size:12px;
+  }
+
 }

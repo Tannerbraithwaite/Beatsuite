@@ -1,0 +1,19 @@
+<ion-header style="border-bottom: 1px solid #fff">
+  <ion-title id="wrapper">
+    <p class="arrow" (click)="cancel()">&#8592;</p>
+    <p class="bookingtitle">{{ 'Change My Location' | translate }}</p>
+  </ion-title>
+</ion-header>
+
+<ion-content style="background:#000">
+
+
+    <ion-searchbar placeholder="Enter Your Location"
+      [showCancelButton]="shouldShowCancel"
+      (ionInput)="onInput($event)"
+      (ionCancel)="onCancel($event)">
+    </ion-searchbar>
+      <div style="height:100%; background-color:#000; padding-top:10%">
+        <button ion-button block (click)="userProfile()" class="navButtonCreate">Save Location</button>
+      </div>
+</ion-content>

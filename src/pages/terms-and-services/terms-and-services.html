@@ -1,0 +1,17 @@
+<ion-content style="background-image:url(../assets/img/background.jpg);">
+
+  <ion-item class="bottomLayerText"></ion-item>
+    <ion-item class="termAndServicesHeader">Terms Of Service</ion-item>
+  <ion-item class="bottomLayerText">
+    Lorem ipsum dolor sit amet, vim ne tation nusquam instructior.Ex mea laudem inermis, eos exerci fierent te, ad facilis gloriatur maiestatis quo.Quo omnium detracto ad, id congue abhorreant vix, pri graeco perpetua moderatius eu.Ei maiorum sensibus sea, at oporteat platonem usu, verear eruditi ut pro. Dicit rationibus mea ad,dicta maiorum per eu, duis persecuti pri at.
+    Lorem ipsum dolor sit amet, vim ne tation nusquam instructior.Ex mea laudem inermis, eos exerci fierent te, ad facilis gloriatur maiestatis quo.Quo omnium detracto ad, id congue abhorreant vix, pri graeco perpetua moderatius eu.Ei maiorum sensibus sea, at oporteat platonem usu, verear eruditi ut pro. Dicit rationibus mea ad,dicta maiorum per eu, duis persecuti pri at.
+  </ion-item>
+  <ion-item class="iAgree">
+    <ion-label style="display:inline-block">I agree to the terms</ion-label>
+    <ion-checkbox item-right [(ngModel)]="hasAgreed" disabled="false" style="display:inline-block"></ion-checkbox>
+  </ion-item>
+  <button [disabled]="!hasAgreed" class="agreeButton">
+    Agree
+  </button>
+
+</ion-content>

@@ -1,0 +1,128 @@
+page-edit-location {
+
+  .searchbar-md {
+    background: inherit;
+    padding: 0;
+    color:#fff;
+    background: #000;
+}
+
+.bookingtitle{
+  font-weight:100;
+}
+
+ion-title{
+  background-color:#000;
+  border:1px solid #666;
+}
+
+.text-input::-moz-placeholder {
+  color: #fff;
+}
+
+.text-input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.text-input::-webkit-input-placeholder {
+  color: #fff;
+}
+  .searchbar-md .searchbar-input {
+    padding: 6px 55px;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    background-position: left 8px center;
+    height: auto;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: #fff;
+    background-color: #000;
+}
+.searchbar-ios {
+  background: inherit;
+  padding: 0;
+  background: #000;
+  color:#fff;
+}
+.searchbar-ios .searchbar-input {
+  padding: 6px 55px;
+  border-radius: 2px;
+  border: 1px solid #fff;
+  background-position: left 8px center;
+  height: auto;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: #fff;
+  background-color: #000;
+}
+
+
+    .backArrow{
+      float:left;
+      color:#fff;
+      font-size:26px;
+      font-weight:100;
+    }
+
+    .item-md.item-block .item-inner {
+    padding-right: 8px;
+    border-bottom: 0px solid #dedede;
+    }
+    .item-ios.item-block .item-inner {
+    padding-right: 8px;
+    border-bottom: 0px solid #dedede;
+    }
+
+    .text-input-md {
+    font-size: 22px;
+    color: #fff;
+    margin-left: 15%;
+    width: 70%;
+    margin-top: 5%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.text-input-ios {
+    font-size: 22px;
+    color: #fff;
+    margin-left: 15%;
+    width: 70%;
+    margin-top: 5%;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 24px 23px 23px 23px;
+}
+
+    .inputLocation{
+      text-align: Left;
+      color:#fff;
+      margin-top:4%;
+      float:left;
+      font-size:18px;
+      border: 1px solid white;
+      background-color:#000;
+    }
+
+    .navButtonCreate{
+      color:#000;
+      font-size: 18px;
+      width:70%;
+      margin-left:15%;
+      position: absolute;
+      bottom:0;
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#5e81C7, endColorstr=#65a5C0);
+      background-image:-moz-linear-gradient(to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+      background-image:linear-gradient( to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+      background-image:-webkit-linear-gradient(to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+      background-image:-o-linear-gradient(to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+      background-image:-ms-linear-gradient( to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+      background-image:-webkit-gradient(linear, left bottom, right bottom, color-stop(0%,#5e81C7), color-stop(50%,#65a5C0),color-stop(100%,#Cf42B0));
+    }
+
+
+}

@@ -1,0 +1,106 @@
+page-add-hourly-rate-modal {
+
+      .bookingtitle {
+        text-align: center;
+        margin: 0;
+        font-weight: 100;
+      }
+
+      .item-ios.item-block .item-inner {
+        padding-right: 8px;
+        border-bottom: 0px solid #c8c7cc;
+      }
+
+
+      .editNameLogo{
+        display: block;
+        max-width: 50%;
+        height: auto;
+        padding-top:2%;
+        padding-bottom:2%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color:#000;
+      }
+
+      .headerCenter{
+        text-align: center;
+        color:#fff;
+        margin:0;
+        background-color:#000;
+        font-size:28px;
+        padding-bottom:16px;
+        font-weight:100;
+      }
+
+      .item-md.item-block .item-inner {
+      padding-right: 8px;
+      border-bottom: 0px solid #dedede;
+      }
+
+      .item-md{
+        padding-left: 8px;
+      }
+
+      .item-ios{
+        padding-left: 8px;
+      }
+
+      ::-webkit-input-placeholder {
+        text-align: center;
+      }
+
+      :-moz-placeholder { /* Firefox 18- */
+        text-align: center;
+      }
+
+      ::-moz-placeholder {  /* Firefox 19+ */
+        text-align: center;
+      }
+
+      :-ms-input-placeholder {
+        text-align: center;
+      }
+
+      .inputbox {
+        font-size: 36px;
+        text-align:center;
+        color: #fff;
+        background-color: #000;
+        width: 25%;
+        border-style: solid;
+        border-color: #fff;
+        border-width: 1px;
+        border-radius: 5px 5px 5px 5px;
+        margin-left:30%;
+        margin-right:30%;
+        margin-bottom:10%;
+      }
+
+      .navButtonCreate{
+        color:#000;
+        font-size: 18px;
+        width: 70%;
+        margin-left:15%;
+        background-color:#5e81C7;
+        position: absolute;
+        bottom:0;
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#5e81C7, endColorstr=#65a5C0);
+        background-image:-moz-linear-gradient(to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+        background-image:linear-gradient( to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+        background-image:-webkit-linear-gradient(to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+        background-image:-o-linear-gradient(to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+        background-image:-ms-linear-gradient( to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+        background-image:-webkit-gradient(linear, left bottom, right bottom, color-stop(0%,#5e81C7), color-stop(50%,#65a5C0),color-stop(100%,#Cf42B0));
+      }
+
+      .text-input-ios {
+        text-align: center;
+      }
+
+      .text-input-md {
+        text-align: center;
+      }
+
+
+  }

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { NavController, ToastController } from 'ionic-angular';
-
+import { NavController, ToastController, Events } from 'ionic-angular';
 import { MainPage } from '../../pages/pages';
-import { User } from '../../providers/user';
-
+import { UserService } from '../../providers/providers';
 import { TranslateService } from '@ngx-translate/core';
-
+import { LoginPage } from '../login/login';
+import { ItemCreatePage } from '../item-create/item-create';
+import { ProfilePromptPage } from '../profile-prompt/profile-prompt';
 
 @Component({
   selector: 'page-signup',
@@ -16,31 +16,34 @@ export class SignupPage {
   // If you're using the username field with or without email, make
   // sure to add it to the type
   account: { name: string, email: string, password: string } = {
-    name: 'Test Human',
-    email: 'test@example.com',
-    password: 'test'
+    name: '',
+    email: '',
+    password: ''
   };
 
   // Our translated text strings
   private signupErrorString: string;
 
   constructor(public navCtrl: NavController,
-    public user: User,
+    public userService: UserService,
     public toastCtrl: ToastController,
-    public translateService: TranslateService) {
+    public translateService: TranslateService,
+    public events:Events) {
 
     this.translateService.get('SIGNUP_ERROR').subscribe((value) => {
       this.signupErrorString = value;
     })
   }
+  login() {
+    this.navCtrl.push(LoginPage);
+  }
 
   doSignup() {
-    // Attempt to login in through our User service
-    this.user.signup(this.account).subscribe((resp) => {
+  /*  this.user.signup(this.account).subscribe((resp) => {
       this.navCtrl.push(MainPage);
-    }, (err) => {
+   }, (err) => {
 
-      this.navCtrl.push(MainPage); // TODO: Remove this when you add your signup endpoint
+     // TODO: Remove this when you add your signup endpoint
 
       // Unable to sign up
       let toast = this.toastCtrl.create({
@@ -49,6 +52,9 @@ export class SignupPage {
         position: 'top'
       });
       toast.present();
-    });
+    });*/
+    this.navCtrl.push(ProfilePromptPage, this.account)
   }
+
+  launch
 }

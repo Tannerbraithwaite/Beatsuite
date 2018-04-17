@@ -1,0 +1,20 @@
+<ion-header style="border-bottom: 1px solid #fff">
+  <ion-title id="wrapper">
+    <p class="arrow">&#8592;</p>
+    <p class="bookingtitle">{{ 'I want to' | translate }}</p>
+  </ion-title>
+</ion-header>
+
+<ion-content style="background:#000">
+
+      <ion-item style="display:inline-block; border-bottom: 1px solid #fff;" *ngFor="let want of wantArray"
+      [ngClass]="{'want': selectedWants.indexOf(want) === -1, 'wantSelected': selectedWants.indexOf(want) !== -1}"
+      (click)="togglewant(want)">
+        {{ want }}
+        <ion-icon name="power" style="float:right; padding-right: 8px;">
+        </ion-icon>
+      </ion-item >
+      <div style="height:100%; background-color:#000; padding-top:10%">
+        <button ion-button block class="navButtonCreate">Save Wants</button>
+      </div>
+</ion-content>

@@ -1,0 +1,32 @@
+<ion-header style="clear: both;">
+
+  <ion-navbar>
+    <ion-title id="wrapper"><p class="arrow" (click)="cancel()">&#8592;</p><p class="bookingtitle">{{ 'Booking' | translate }}</p></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content>
+<hr size="1" NOSHADE>
+<div>
+  <p class="bookingrequesttext">
+    Enter your 4-digit code to continue.
+  </p>
+</div>
+<div>
+  <p class="bookingrequesttext2">
+    We sent a code to *sample phone*.<br> Enter that code below.
+  </p>
+</div>
+<div>
+  <p class="code">
+    4-digit code.
+  </p>
+  <ion-input type="number" placeholder="" class="inputbox"></ion-input>
+</div>
+<div>
+  <button ion-button color="primary" block class="continuebutton" (click)="confirmBooking()">{{ 'Continue' | translate }}</button>
+</div>
+</ion-content>

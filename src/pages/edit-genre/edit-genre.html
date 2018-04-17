@@ -1,0 +1,19 @@
+<ion-header style="border-bottom: 1px solid #fff">
+  <ion-title id="wrapper">
+    <p class="arrow" (click)="cancel()">&#8592;</p>
+    <p class="bookingtitle">{{ 'Edit Your Genres' | translate }}</p>
+  </ion-title>
+</ion-header>
+
+<ion-content style="background:#000">
+
+      <ion-item style="display:inline-block; border-bottom: 1px solid #fff;" *ngFor="let genre of genreArray"
+      [ngClass]="{'genre': selectedGenres.indexOf(genre) === -1, 'genreSelected': selectedGenres.indexOf(genre) !== -1}"
+      (click)="togglegenre(genre)">
+        {{ genre }}
+        <ion-icon name="power" style="float:right; padding-right: 8px;"></ion-icon>
+      </ion-item >
+      <div style="height:100%; background-color:#000; padding-top:10%">
+        <button ion-button block (click)="userProfile()" class="navButtonCreate">Save Genres</button>
+      </div>
+</ion-content>

@@ -1,0 +1,33 @@
+page-collab-search {
+  ion-icon {
+    font-size: 0.8em;
+  }
+
+  .searchbar-ios .searchbar-input{
+    padding: 0 28px;
+    border-radius: 12px;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #000;
+  }
+  .searchbar-md .searchbar-input{
+    padding: 0 36px;
+    border-radius: 12px;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #000;
+  }
+
+  .searchbar-md .searchbar-search-icon {
+    left: 16px;
+    top: 6px;
+  }
+page-tabs .toolbar-title {
+    font-size: 16px;
+}
+
+  }

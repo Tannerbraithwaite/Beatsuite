@@ -1,18 +1,29 @@
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>{{ item.name }}</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content>
-  <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.profilePic + ')'">
+<ion-content class="flatpageBacking">
+  <div class="editIcons">
+    <p (click)="editPage()">&#9998;
+    <a class="editIcons">&#9881;</a></p>
   </div>
+  <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.profilePic + ')'">
 
-  <div class="item-detail" padding>
-    <h2>{{item.name}}</h2>
-    <p>{{item.about}}</p>
+  </div>
+  <div>
+    <h2 class="profileHeader">{{item.name}}</h2>
+    <p class="profileText">{{item.Location}}</p>
+    <h2 class="standardHeader">About</h2>
+      <p class="profileText">{{item.about}}</p>
+    <h2 class="standardHeader">Booking Information</h2>
+      <ion-item style="background:transparent">
+        <p class="profileinfoLeft">Rates <a class="profileinfoRight">View <ion-icon name="ios-eye-outline"></ion-icon></a></p>
+      </ion-item>
+      <ion-item style="background:transparent">
+        <p class="profileinfoLeft">Availability <a class="profileinfoRight">View <ion-icon name="ios-eye-outline"></ion-icon></a></p>
+      </ion-item>
+      <ion-item style="background:transparent">
+        <p class="profileinfoLeft">Cancellation Policy <a class="profileinfoRight">View <ion-icon name="ios-eye-outline"></ion-icon></a></p>
+      </ion-item>
+      <h2 class="standardHeader">My Genres</h2>
+        <p class="profileText">{{item.Genres}}</p>
+      <h2 class="standardHeader">Equipment and Software</h2>
+        <p class="profileText">{{item.equipment}}</p>
   </div>
 </ion-content>

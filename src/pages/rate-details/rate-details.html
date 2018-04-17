@@ -1,0 +1,27 @@
+<ion-header style="border-bottom: 1px solid #fff">
+  <ion-title id="wrapper">
+    <p class="arrow">&#8592;</p>
+    <p class="bookingtitle">{{ 'Rate Details (per hr)' | translate }}</p>
+  </ion-title>
+</ion-header>
+
+<ion-content style="background:#000">
+
+  <ion-item class="rateDetail" style="display:inline-block; border-bottom: 1px solid #fff;">
+    <ion-label>Currency</ion-label>
+    <ion-select interface="popover">
+      <ion-option value="CAD" style="color:#000">CAD</ion-option>
+      <ion-option value="USD" style="color:#000">USD</ion-option>
+      <ion-option value="Euro" style="color:#000">EUR</ion-option>
+    </ion-select>
+  </ion-item >
+
+      <ion-item class="rateDetail" style="display:inline-block; border-bottom: 1px solid #fff;" *ngFor="let rate of rateArray">
+        {{ rate }}
+        <ion-icon name="add-circle" style="float:right; padding-right: 8px;">
+        </ion-icon>
+      </ion-item >
+      <div style="height:100%; background-color:#000; padding-top:10%">
+        <button ion-button block class="navButtonCreate">Save Rates</button>
+      </div>
+</ion-content>

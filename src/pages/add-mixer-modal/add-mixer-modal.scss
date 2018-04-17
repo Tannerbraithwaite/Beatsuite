@@ -1,0 +1,128 @@
+page-add-mixer-modal {
+      .navButton{
+        color:#000;
+        font-size: 18px;
+        border-radius:5px 5px 5px 5px;
+        background-color:#999;
+        width:25%;
+        float:left;
+        margin-top:0;
+      }
+
+      .bookingtitle{
+        font-weight:100;
+      }
+
+      .item-ios.item-block .item-inner {
+        padding-right: 8px;
+        border-bottom: 0px solid #c8c7cc;
+      }
+
+      .rateDetail{
+        display: inline-block;
+        background:#000;
+        height:36px;
+        color:#fff;
+        font-size: 18px;
+      }
+
+      .editNameLogo{
+        display: block;
+        max-width: 50%;
+        height: auto;
+        padding-top:2%;
+        padding-bottom:2%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color:#000;
+      }
+
+      .headerCenter{
+        text-align: center;
+        color:#fff;
+        margin:0;
+        font-size:18px;
+        font-weight:100;
+      }
+
+      .backArrow{
+        float:left;
+        color:#fff;
+        font-size:26px;
+        font-weight:100;
+      }
+      .prompt{
+        text-align: center;
+        color:#fff;
+        margin:0;
+        font-size:18px;
+        font-weight:100;
+      }
+      .item-md.item-block .item-inner {
+      padding-right: 8px;
+      border-bottom: 0px solid #dedede;
+      }
+
+      .item-md{
+        padding-left: 8px;
+        color: #fff;
+        background-color: #222;
+      }
+
+      [col] {
+        padding: 0;
+      }
+
+      .item-ios{
+        padding-left: 8px;
+        color: #fff;
+        background-color: #222;
+      }
+
+      .inputbox {
+        font-size: 14px;
+        color: #fff;
+        background-color: #000;
+        margin-left:0;
+        width: 100%;
+        border-width: 0;
+        border-bottom-style: solid;
+        border-bottom-color: #fff;
+        border-bottom-width: 1px;
+        border-radius: 0 0 0 0;
+      }
+
+      .inputName{
+        text-align: center;
+        color:#fff;
+        margin:0;
+        font-size:18px;
+        font-weight:100;
+        border-radius:10px 10px 10px 10px;
+        margin-right:auto;
+        margin-left:auto;
+        margin-top:4%;
+        position: relative;
+        width:50%;
+        background-color:#222;
+      }
+
+      .navButtonCreate{
+        color:#000;
+        font-size: 18px;
+        width: 70%;
+        margin-left:15%;
+        background-color:#5e81C7;
+        position: absolute;
+        bottom:0;
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#5e81C7, endColorstr=#65a5C0);
+        background-image:-moz-linear-gradient(to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+        background-image:linear-gradient( to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+        background-image:-webkit-linear-gradient(to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+        background-image:-o-linear-gradient(to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+        background-image:-ms-linear-gradient( to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+        background-image:-webkit-gradient(linear, left bottom, right bottom, color-stop(0%,#5e81C7), color-stop(50%,#65a5C0),color-stop(100%,#Cf42B0));
+      }
+
+
+  }

@@ -1,0 +1,72 @@
+page-edit-equipment {
+
+  .bookingtitle{
+    font-weight:100;
+  }
+
+  ion-title{
+    background-color:#000;
+    border-bottom:1px solid #666;
+  }
+
+    .equipment{
+      display: inline-block;
+      background:#000;
+      height:36px;
+      color:#fff;
+      font-size: 18px;
+    }
+
+    .equipmentSelected{
+      background:#000;
+      flex-grow: 1;
+      height:36px;
+      color:#fff;
+      font-size: 18px;
+      color:#5e81C7;
+    }
+
+
+    .navButtonCreate{
+      color:#000;
+      font-size: 18px;
+      width:70%;
+      margin-left:15%;
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#5e81C7, endColorstr=#65a5C0);
+      background-image:-moz-linear-gradient( to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+      background-image:linear-gradient(to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+      background-image:-webkit-linear-gradient(to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+      background-image:-o-linear-gradient(to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+      background-image:-ms-linear-gradient(to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
+      background-image:-webkit-gradient(linear, left bottom, right bottom, color-stop(0%,#5e81C7), color-stop(50%,#65a5C0),color-stop(100%,#Cf42B0));
+    }
+
+    .item-md {
+      padding-left: 0 !important;
+      border-bottom: 1px solid #dedede;
+      width: 100%;
+      padding-right: 8px;
+      margin:0 0 -5px 0 ;
+    }
+
+    .item-md.item-block .item-inner {
+      padding-left: 8px;
+      padding-right: 8px;
+      border-bottom: 1px solid #dedede;
+    }
+
+  .item-ios {
+    padding-left: 0 !important;
+    border-bottom: 1px solid #dedede;
+    width: 100%;
+    padding-right: 8px;
+    margin:0 0 -5px 0;
+
+  }
+
+  .item-ios.item-block .item-inner {
+    padding-left: 8px;
+    padding-right: 8px;
+    border-bottom: 1px solid #dedede;
+  }
+}

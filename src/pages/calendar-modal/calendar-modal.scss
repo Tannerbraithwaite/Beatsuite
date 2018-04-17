@@ -1,0 +1,29 @@
+page-calendar-modal {
+  .toolbar-md-primary .toolbar-background-md {
+    background: #000;
+}
+  ion-content{
+    background-color:#000 !important;
+  }
+
+  .toolbar-ios-primary .toolbar-title-ios, .toolbar-ios-primary .bar-button-clear-ios, .toolbar-ios-primary .bar-button-default-ios {
+    color: #fff;
+    font-weight: 100;
+}
+  .eventtime{
+    color:#fff;
+    background: transparent;
+    padding-left: 0px;
+  }
+  .eventtext{
+    padding-left:5%;
+  }
+
+  .addevent{
+    background: linear-gradient(to right, #02cecc 0%, #630ac0 100%);
+    color: black;
+    border-radius: 24px 24px 24px 24px;
+    width: 70%;
+    margin-left:15%;
+  }
+}

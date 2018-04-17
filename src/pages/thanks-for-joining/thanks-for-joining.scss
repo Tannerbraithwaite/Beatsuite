@@ -1,0 +1,57 @@
+page-thanks-for-joining {
+  .signupHeader{
+      color:#fff;
+      padding-top:1%;
+      padding-bottom:5%;
+      font-weight:100;
+      text-align:center;
+      font-size:32px;
+      white-space:pre-wrap;
+    }
+
+    .welcomeLogo{
+      display: block;
+      width: 60%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .signupArrow{
+      color:#fff;
+      padding-top:5%;
+      padding-left:5%;
+      font-weight:100;
+      font-size:32px;
+    }
+
+    .navButton{
+      color:#fff;
+      font-size: 18px;
+      border-radius:24px 23px 23px 23px;
+      background-color:rgba(0,0,0,.5);
+      border-top: 1px solid #333;
+    }
+
+    .signupText{
+      color:#fff;
+      padding-left:15%;
+      padding-right:15%;
+      padding-top:1%;
+      padding-bottom:5%;
+      font-weight:100;
+      text-align:center;
+      font-size:18px;
+      white-space:pre-wrap;
+    }
+    .welcomeText{
+      color:#fff;
+      padding-top:1%;
+      padding-bottom:5%;
+      font-weight:100;
+      text-align:center;
+      font-size:12px;
+      white-space:pre-wrap;
+    }
+
+}

@@ -1,13 +1,22 @@
-<ion-content scroll="false">
-  <div class="splash-bg"></div>
-  <div class="splash-info">
-    <div class="splash-logo"></div>
-    <div class="splash-intro">
-      {{ 'WELCOME_INTRO' | translate }}
-    </div>
-  </div>
+<ion-content scroll="false" style="background-image:url(../assets/img/background.jpg)">
+<h2 class="welcomeMessage">Welcome to,</h2>
+<img src="../assets/img/Final Logo.png" class="welcomeLogo">
   <div padding>
-    <button ion-button block (click)="signup()" class="signup">{{ 'SIGNUP' | translate }}</button>
-    <button ion-button block (click)="login()" class="login">{{ 'LOGIN' | translate }}</button>
+    <button ion-button block (click)="profilePrompt()" class="navButton">☁ Continue with Soundcloud</button>
+    <button ion-button block (click)="signup()" class="navButton">Create an Account</button>
   </div>
+  <div>
+  <p class="welcomeText">
+          By tapping continue or create an account, I agree to the BeatMatch
+          <a (click)="termsofService()" style="color:#fff">
+            <u>Terms of service Policy</u></a>
+  </p>
+</div>
+<div>
+<p class="welcomeText">
+        Already have an account?
+        <a (click)="login()" style="color:#fff; font-weight:600">
+          Sign In</a>
+</p>
+</div>
 </ion-content>

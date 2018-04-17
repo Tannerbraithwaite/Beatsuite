@@ -1,3 +1,39 @@
 page-tabs {
+  .tabs-md .tab-button[aria-selected=true] .tab-button-text {
+    text-decoration: underline;
+    color:#fff;
+}
+.toolbar-title {
+    font-size: 16px;
+}
+
+.tabs-md .tabbar {
+    background: #343434;
+    color:#fff;
+    font-size:1.8em;
+}
+
+.tabs-md .tab-button{
+    min-height: 5.6rem;
+    font-weight: normal;
+    color: #fff;
+    padding: 0;
+    font-size:1.8em;
+}
+.tabs-ios .tabbar {
+    background: #343434;
+    color: #fff;
+}
+.tabs-ios .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true] {
+    color: #fff;
+}
+.tabs-ios .tab-button {
+    max-width: 240px;
+    min-height: 49px;
+    font-size: 10px;
+    color: #fff;
+    padding: 0 2px;
+}
+
 
 }

@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+    </ion-title>
+        <ion-title id="wrapper"><p (click)="cancel()" class="arrow">&#8592;</p><p class="bookingtitle">{{ 'Booking' | translate }}</p></ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content>
+  <ion-item style="background:#000; width=100%; color:#fff">
+    <ion-label>Session Type:*</ion-label>
+    <ion-select [(ngModel)]="selectedDay" interface="popover">
+      <ion-option value="teaching">Teaching</ion-option>
+      <ion-option value="learning">Learning</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item style="background:#000; width=100%; color:#fff">
+    <ion-label>Location:*</ion-label>
+    <ion-select [(ngModel)]="selectedDay" interface="popover">
+      <ion-option value="teaching">Teaching</ion-option>
+      <ion-option value="learning">Learning</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item style="background:#222; color:#fff">
+    <ion-label style="white-space: pre">Booking Description:*</ion-label>
+  </ion-item>
+  <ion-item style="background:#222">
+    <ion-textarea style="background:#000; border-radius: 8px 8px 8px 8px; margin-right:8px; margin-bottom:5%" column="50" row="5" placeholder="What would you like to get out of this session?">
+    </ion-textarea>
+  </ion-item>
+  <ion-content>
+    <ion-item style="background:#000; width=100%; color:#fff">
+      <ion-label>Pick a Date:*</ion-label>
+    </ion-item>
+    <ion-title>{{viewTitle | date: "MMMM"}}</ion-title>
+  <calendar [dateFormatter]="calendar.dateFormatter"
+          [eventSource]="eventSource"
+          [calendarMode]="calendar.mode"
+          [currentDate]="calendar.currentDate"
+          (onEventSelected)="onEventSelected($event)"
+          (onTitleChanged)="onViewTitleChanged($event)"
+          (onTimeSelected)="onTimeSelected($event)"
+          step="30"
+          class="calendar">
+    </calendar>
+    <ion-buttons end>
+      <button class="button-block" ion-button icon-only (click)="addEvent()">
+        Next
+      </button>
+    </ion-buttons>
+</ion-content>

@@ -1,0 +1,32 @@
+<ion-header style="clear: both;">
+
+  <ion-navbar>
+    <ion-title id="wrapper"><p class="arrow">&#8592;</p><p class="bookingtitle">{{ 'Booking' | translate }}</p></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content>
+<hr size="1" NOSHADE>
+<div>
+  <p class="bookingrequesttext">
+    Before booking a session, please confirm your phone number.
+  </p>
+</div>
+<div>
+  <p class="bookingrequesttext2">
+    This is so your tutor can<br> contact you if need be.
+  </p>
+</div>
+<div>
+  <p class="phone">
+    Phone Number
+  </p>
+  <ion-input type="tel" placeholder="&#9990;" class="inputbox"></ion-input>
+</div>
+<div>
+  <button ion-button color="primary" block class="continuebutton">{{ 'Continue' | translate }}</button>
+</div>
+</ion-content>

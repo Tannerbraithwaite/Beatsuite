@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 
 import { LoginPage } from '../login/login';
 import { SignupPage } from '../signup/signup';
+import { ProfilePromptPage } from '../profile-prompt/profile-prompt';
 
 /**
  * The Welcome Page is a splash page that quickly describes the app,
@@ -20,6 +21,14 @@ export class WelcomePage {
 
   login() {
     this.navCtrl.push(LoginPage);
+  }
+
+  termsofService() {
+    this.navCtrl.push(LoginPage);
+  }
+
+  profilePrompt() {
+    this.navCtrl.push(ProfilePromptPage);
   }
 
   signup() {

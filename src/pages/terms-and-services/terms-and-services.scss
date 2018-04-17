@@ -1,0 +1,68 @@
+page-terms-and-services {
+  .bottomLayerText{
+    background-color: rgba(white, .3);
+    white-space: pre-wrap;
+  }
+
+  .termAndServicesHeader{
+    color:#fff;
+    background:#111011;
+    font-size:24px;
+  }
+  .agreeButton{
+    width:100%;
+    font-size:24px;
+    color:#fff;
+    background-color:#111011;
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+
+  .checkbox-md .checkbox-checked {
+    background-color: transparent;
+}
+
+  .iAgree{
+    background-color:#242525;
+    color:#fff;
+    font-size:24px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .scroll-content{
+    padding:5%;
+  }
+
+  ion-label{
+    white-space: pre-wrap;
+  }
+
+  .input-wrapper{
+    padding-left:5%;
+    padding-right:5%;
+  }
+
+    .label-md {
+      margin:0 0 0 0;
+    }
+    .label-ios {
+      margin:0 0 0 0;
+    }
+    .item-md {
+      padding-right: 0;
+      padding-left:0;
+    }
+    .item-ios{
+      padding-right: 0;
+      padding-left:0;
+    }
+    .item-md.item-block .item-inner {
+      border-bottom: 0 solid #dedede;
+      padding:0;
+    }
+
+    .item.item-md .checkbox-md[item-right], .item.item-md .checkbox-md[item-end] {
+    margin: 11px 15% 10px 0;
+}
+
+}

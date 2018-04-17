@@ -14,3 +14,68 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+ion-content {
+    background-image: url('../assets/img/background.jpg');
+    background-size: cover;
+    background-origin: center;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+font-family: Dosis-Light;
+src: url('/assets/fonts/Dosis-Light') format("opentype");
+src: url('/assets/fonts/Dosis-Light.woff') format("woff");
+src: url('/assets/fonts/Dosis-Light.woff2') format("woff2");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: Dosis-Medium;
+src: url('/assets/fonts/Dosis-Medium') format("opentype");
+src: url('/assets/fonts/Dosis-Medium.woff') format("woff");
+src: url('/assets/fonts/Dosis-Medium.woff2') format("woff2");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Dosis-ExtraBold';
+src: url('/assets/fonts/Dosis-ExtraBold') format("opentype");
+src: url('/assets/fonts/Dosis-ExtraBold.woff') format("woff");
+src: url('/assets/fonts/Dosis-ExtraBold.woff2') format("woff2");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Dosis-ExtraLight';
+src: url('/assets/fonts/Dosis-ExtraLight') format("opentype");
+src: url('/assets/fonts/Dosis-ExtraLight.woff') format("woff");
+src: url('/assets/fonts/Dosis-ExtraLight.woff2') format("woff2");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Dosis-Bold';
+src: url('/assets/fonts/Dosis-Bold') format("opentype");
+src: url('/assets/fonts/Dosis-Bold.woff') format("woff");
+src: url('/assets/fonts/Dosis-Bold.woff2') format("woff2");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Dosis-Regular';
+src: url('/assets/fonts/Dosis-Regular') format("opentype");
+src: url('/assets/fonts/Dosis-Regular.woff') format("woff");
+src: url('/assets/fonts/Dosis-Regular.woff2') format("woff2");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Dosis-SemiBold';
+src: url('/assets/fonts/Dosis-SemiBold') format("opentype");
+src: url('/assets/fonts/Dosis-SemiBold.woff') format("woff");
+src: url('/assets/fonts/Dosis-SemiBold.woff2') format("woff2");
+font-weight: normal;
+font-style: normal;
+}

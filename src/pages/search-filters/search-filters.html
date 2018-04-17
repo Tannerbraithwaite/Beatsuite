@@ -1,0 +1,37 @@
+
+<ion-content style="background-color:#000">
+    <ion-icon name="close" class="exitButton"></ion-icon>
+    <ion-item class="headerscript">{{ 'Fitlers' | translate }}</ion-item>
+  <h2 class="filterHeader">Price Range(hr)</h2>
+    <ion-item>
+    <ion-range min="10" max="300" step="5" snaps="false" class="rangescroll" pin="true"></ion-range>
+  </ion-item>
+
+  <h2 class="filterHeader2">Distance Radius(Km's)</h2>
+    <ion-item>
+    <ion-range min="2" max="50" step="1" snaps="false" class="rangescroll2" pin="true"></ion-range>
+  </ion-item>
+
+  <h2 class="filterHeader">Genres</h2>
+  <ion-grid style="background-color:#000">
+    <ion-row>
+      <ion-col col-4 *ngFor="let genre of genreArray">
+        <button ion-button block text-wrap class="genreSelected" [ngClass]="{'genre': selectedGenres.indexOf(genre) === -1, 'genreSelected': selectedGenres.indexOf(genre) !== -1}" (click)="togglegenre(genre)">
+          {{ genre.name }}
+        </button>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+
+  <h2 class="filterHeader2" style="border-top: 1px solid #999">Equipment</h2>
+  <ion-grid style="background-color:#222">
+    <ion-row>
+      <ion-col col-4 *ngFor="let equipment of equipmentArray">
+        <button ion-button block text-wrap [ngClass]="{'genre': selectedEquipment.indexOf(equipment) === -1, 'genreSelected': selectedEquipment.indexOf(equipment) !== -1}" (click)="toggleequipment(equipment)">
+          {{ equipment }}
+        </button>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+
+<button ion-button block class="navButton">Apply Filters</button>

@@ -1,0 +1,39 @@
+
+<ion-header style="border-bottom: 1px solid #fff">
+  <ion-title id="wrapper">
+    <p class="arrow">&#8592;</p>
+    <p class="bookingtitle">{{ 'Add Mixer' | translate }}</p>
+  </ion-title>
+</ion-header>
+
+<ion-content style="background:#000">
+  <ion-item style="background:#000;">
+    <img src="../assets/img/star.png" class="editNameLogo">
+  </ion-item>
+
+  <ion-item style="background:#000;">
+    <ion-input type="text" placeholder="Type Of Mixer" class="inputbox" style="text-align:center; background-color:#000;"></ion-input>
+  </ion-item>
+
+
+
+  <ion-item style="background:#000;">
+      <ion-input type="text" placeholder="Mixer Details(Optional)" class="inputbox" style="text-align:center; background-color:#000;"></ion-input>
+  </ion-item>
+
+  <ion-item class="rateDetail" style="display:inline-block; border-bottom: 1px solid #fff; background-color:#000">
+    <ion-label>I want to</ion-label>
+  <ion-select interface="popover" multiple="true">
+    <ion-option value="Irent" style="color:#000">I want to Rent</ion-option>
+    <ion-option value="ITeach" style="color:#000">I want to teach</ion-option>
+    <ion-option value="I" style="color:#000">I want to Learn</ion-option>
+  </ion-select>
+
+  </ion-item >
+  <ion-item>
+      <button ion-button block class="navButton" (click)="addSoftware()">add</button>
+  </ion-item>
+
+<button ion-button block class="navButtonCreate" (click)="saveSoftware()">Save Software</button>
+
+</ion-content>

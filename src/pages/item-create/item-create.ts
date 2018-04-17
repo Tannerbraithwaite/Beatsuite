@@ -1,13 +1,15 @@
 import { Component, ViewChild } from '@angular/core';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
-import { NavController, ViewController } from 'ionic-angular';
-
+import { NavController, ModalController, ViewController, IonicPage } from 'ionic-angular';
 import { Camera } from '@ionic-native/camera';
+import { ItemDetailPage } from '../item-detail/item-detail';
+import { EditLocationPage } from '../edit-location/edit-location';
 
-
+@IonicPage()
 @Component({
   selector: 'page-item-create',
-  templateUrl: 'item-create.html'
+  templateUrl: 'item-create.html',
+  providers: [],
 })
 export class ItemCreatePage {
   @ViewChild('fileInput') fileInput;
@@ -16,14 +18,19 @@ export class ItemCreatePage {
 
   item: any;
 
+
+
   form: FormGroup;
 
-  constructor(public navCtrl: NavController, public viewCtrl: ViewController, formBuilder: FormBuilder, public camera: Camera) {
+  constructor(public navCtrl: NavController, public viewCtrl: ViewController, formBuilder: FormBuilder, public camera: Camera, public modalCtrl: ModalController) {
     this.form = formBuilder.group({
       profilePic: [''],
-      name: ['', Validators.required],
-      about: ['']
+      about: [''],
+      Location: [''],
+
+      equipment: [''],
     });
+
 
     // Watch the form for changes, and
     this.form.valueChanges.subscribe((v) => {
@@ -31,9 +38,8 @@ export class ItemCreatePage {
     });
   }
 
-  ionViewDidLoad() {
 
-  }
+
 
   getPicture() {
     if (Camera['installed']()) {
@@ -79,6 +85,27 @@ export class ItemCreatePage {
    */
   done() {
     if (!this.form.valid) { return; }
-    this.viewCtrl.dismiss(this.form.value);
+    this.navCtrl.push(ItemDetailPage);
+  }
+
+
+  editLocation() {
+    this.navCtrl.push(EditLocationPage);
+  }
+
+  addGenre() {
+    /*
+    let addModal = this.modalCtrl.create('EditGenrePage');
+    addModal.onDidDismiss(genre => {
+      if (genre) {
+        this.genres.add(genre);
+      }
+    })
+    addModal.present();
+    */
+  }
+
+  addLocation() {
+
   }
 }
