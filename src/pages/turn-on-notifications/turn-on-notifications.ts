@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
 
+import { ProfilePromptPage } from '../profile-prompt/profile-prompt';
+
 
 import { UserService } from '../../providers/providers';
 
@@ -21,6 +23,12 @@ export class TurnOnNotificationsPage {
     public toastCtrl: ToastController,
     public translateService: TranslateService) {
     }
+
+    profilePrompt(){
+      this.navCtrl.push(ProfilePromptPage);
+    }
   }
+
+
 
   // Attempt to login in through our User service

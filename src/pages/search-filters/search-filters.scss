@@ -7,6 +7,10 @@ page-search-filters {
     float:left;
   }
 
+  ion-title{
+    background-color:#000;
+  }
+
   .headerscript{
     text-align:center;
     display:inline-block;
@@ -14,6 +18,9 @@ page-search-filters {
     color:#fff;
     background-color: #222;
     font-size:28px;
+  }
+  .bookingtitle{
+    font-weight:100;
   }
 
   .item-md.item-block .item-inner {
@@ -132,11 +139,7 @@ page-search-filters {
     background-color:#222;
     padding-left:0;
   }
-
-  ion-title{
-    background-color:#222;
-  }
-
+  
   .toolbar-ios {
     padding: 0;
     min-height: 44px;

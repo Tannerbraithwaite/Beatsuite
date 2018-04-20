@@ -6,6 +6,8 @@ import { TranslateService } from '@ngx-translate/core';
 import { LoginPage } from '../login/login';
 import { ItemCreatePage } from '../item-create/item-create';
 import { ProfilePromptPage } from '../profile-prompt/profile-prompt';
+import { TermsAndServicesPage } from '../terms-and-services/terms-and-services';
+
 
 @Component({
   selector: 'page-signup',
@@ -53,7 +55,7 @@ export class SignupPage {
       });
       toast.present();
     });*/
-    this.navCtrl.push(ProfilePromptPage, this.account)
+    this.navCtrl.push(TermsAndServicesPage, this.account)
   }
 
   launch

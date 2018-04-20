@@ -1,19 +1,22 @@
 page-user-profile {
-
     .profile-image-wrapper {
       text-align: center;
       margin: 20px 0;
 
-      .profile-image {
-        width: 96px;
-        height: 96px;
+      .profileImage {
+        width: 240px;
+        height: 240px;
         border-radius: 50%;
-
         display: inline-block;
-
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+      }
+
+      .item-md.item-block .item-inner {
+        padding-left: 8px;
+        border-bottom: 1px solid #dedede;
+        width: 105%;
       }
 
 
@@ -25,7 +28,6 @@ page-user-profile {
         height: 96px;
         border-radius: 50%;
         font-size: 12px;
-
         ion-icon {
           font-size: 44px;
           margin-bottom: -10px;
@@ -101,9 +103,11 @@ page-user-profile {
     .navButtonCreate{
       color:#000;
       font-size: 18px;
-      width:100%;
-      width:100%;
+      width: 70%;
+      margin-left:15%;
+      border-radius: 24px 24px 24px 24px;
       background-color:#5e81C7;
+      padding:0;
       filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#5e81C7, endColorstr=#65a5C0);
       background-image:-moz-linear-gradient( to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
       background-image:linear-gradient(to left, #5e81C7 0%, #65a5C0 50%,#Cf42B0 100%);
@@ -127,4 +131,37 @@ page-user-profile {
       color: white;
       padding-left:0;
     }
+
+    .item-md {
+      padding-left: 0 !important;
+      border-bottom: 1px solid #dedede;
+      width: 105%;
+    }
+
+    .item-md.item-block .item-inner {
+      padding-left: 8px;
+      padding-right: 8px;
+      border-bottom: 1px solid #dedede;
+      width: 105%;
+    }
+    .label-md {
+      margin: 13px 8px 13px 0;
+      padding-right: 8px;
+  }
+  .item-ios {
+    padding-left: 0 !important;
+    border-bottom: 1px solid #dedede;
+    width: 105%;
+  }
+
+  .item-ios.item-block .item-inner {
+    padding-left: 8px;
+    padding-right: 8px;
+    border-bottom: 1px solid #dedede;
+    width: 105%;
+  }
+  .label-ios {
+    margin: 13px 8px 13px 0;
+    padding-right: 8px;
+  }
   }

@@ -1,6 +1,6 @@
-
-<ion-content style="Background:#222">
-  <form *ngIf="form" [formGroup]="form" (ngSubmit)="createItem()">
+<ion-content style="Background:#222">\
+  <p (click)="cancel()" class="arrow">&#8592;</p>
+  <form *ngIf="form" [formGroup]="form">
     <input type="file" #fileInput style="visibility: hidden; height: 0px" name="files[]" (change)="processWebImage($event)" />
     <div class="profile-image-wrapper" (click)="getPicture()">
         <img *ngIf="image_available" class="profileImage" src="{{entry.getElementsByTagName('enclosure')[0].getAttribute('url')}}">
@@ -15,27 +15,23 @@
   </ion-item>
 
     <ion-item style="background:#000;">
-      <p class="profileinfoLeft">Name <a class="profileinfoRight" *ngIf="!this.form.controls.name.value">{{name}} <ion-icon class="profileinfoRight" ios="ios-arrow-forward" md="md-arrow-forward" (click)="editName()"></ion-icon></a></p>
+      <p class="profileinfoLeft">Name <a class="profileinfoRight" *ngIf="!this.form.controls.name.value">{{name}} </a></p>
     </ion-item>
 
     <ion-item style="background:#000;">
-      <p class="profileinfoLeft">Location <a class="profileinfoRight" *ngIf="!this.form.controls.Location.value">{{Location}} <ion-icon class="profileinfoRight" ios="ios-arrow-forward" md="md-arrow-forward" (click)="editLocation()"></ion-icon></a></p>
+      <p class="profileinfoLeft">Location <a class="profileinfoRight" *ngIf="!this.form.controls.Location.value">{{Location}}</a></p>
     </ion-item>
 
     <ion-item style="background:#000;">
-      <p class="profileinfoLeft">Genres <ion-icon class="profileinfoRight" ios="ios-arrow-forward" md="md-arrow-forward" (click)="addGenre()"></ion-icon></p>
+      <p class="profileinfoLeft">Genres</p>
     </ion-item>
 
     <ion-item style="background:#000;">
-      <p class="profileinfoLeft">Equipment <ion-icon class="profileinfoRight" ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon></p>
+      <p class="profileinfoLeft">Equipment</p>
     </ion-item>
 
     <ion-item style="background:#000;">
-      <p class="profileinfoLeft">Connect <ion-icon class="profileinfoRight" ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon></p>
-    </ion-item>
-
-    <ion-item style="background:#000;">
-      <p class="profileinfoLeft">Connect <ion-icon class="profileinfoRight" ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon></p>
+      <p class="profileinfoLeft">Connect</p>
     </ion-item>
 
     <ion-item style="background:#222">
@@ -43,25 +39,19 @@
     </ion-item>
 
     <ion-item style="background:#000;">
-      <p class="profileinfoLeft">Services <ion-icon class="profileinfoRight" ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon></p>
+      <p class="profileinfoLeft">Services</p>
     </ion-item>
 
     <ion-item style="background:#000;">
-      <p class="profileinfoLeft">Meet up Location <ion-icon class="profileinfoRight" ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon></p>
+      <p class="profileinfoLeft">Meet up Location</p>
     </ion-item>
     <ion-item style="background:#000;">
-      <p class="profileinfoLeft">Availability <ion-icon class="profileinfoRight" ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon></p>
+      <p class="profileinfoLeft">Availability</p>
     </ion-item>
 
     <ion-item style="background:#000;">
-      <p class="profileinfoLeft">Cancellation Policy <ion-icon class="profileinfoRight" ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon></p>
+      <p class="profileinfoLeft">Cancellation Policy </p>
     </ion-item>
 
-      <button ion-button (click)="done()"  class="navButtonCreate">
-        <span showWhen="ios">
-          {{ 'DONE_BUTTON' | translate }}
-        </span>
-        <p>Create a Profile</p>
-      </button>
   </form>
 </ion-content>

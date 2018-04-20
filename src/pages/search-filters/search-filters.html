@@ -1,7 +1,12 @@
+<ion-header style="border-bottom: 1px solid #fff">
+  <ion-title id="wrapper">
+    <p class="arrow" (click)="cancel()">&#8592;</p>
+    <p class="bookingtitle">{{ 'Filters' | translate }}</p>
+  </ion-title>
+</ion-header>
+
 
 <ion-content style="background-color:#000">
-    <ion-icon name="close" class="exitButton"></ion-icon>
-    <ion-item class="headerscript">{{ 'Fitlers' | translate }}</ion-item>
   <h2 class="filterHeader">Price Range(hr)</h2>
     <ion-item>
     <ion-range min="10" max="300" step="5" snaps="false" class="rangescroll" pin="true"></ion-range>
@@ -34,4 +39,4 @@
   </ion-row>
   </ion-grid>
 
-<button ion-button block class="navButton">Apply Filters</button>
+<button ion-button block class="navButton" (click)="userProfile()">Apply Filters</button>

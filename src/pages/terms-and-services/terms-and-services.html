@@ -10,7 +10,7 @@
     <ion-label style="display:inline-block">I agree to the terms</ion-label>
     <ion-checkbox item-right [(ngModel)]="hasAgreed" disabled="false" style="display:inline-block"></ion-checkbox>
   </ion-item>
-  <button [disabled]="!hasAgreed" class="agreeButton">
+  <button [disabled]="!hasAgreed" class="agreeButton" (click)="beforeYouJoin()">
     Agree
   </button>
 

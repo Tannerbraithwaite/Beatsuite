@@ -1,20 +1,24 @@
 page-select-payment-method {
   ion-content {
-      background-color: #222 !important;
+      background-color: #000 !important;
       background-size: cover;
       background-origin: center;
       background-repeat: no-repeat;
       background-image: none;
   }
 
+  .bookingtitle{
+    font-weight:100;
+  }
+
   ion-title{
     text-align:Left;
-    background-color: #222;
+    background-color: #000;
     color:#fff;
     padding:0;
   }
   ion-navbar{
-    background-color:#222;
+    background-color:#000;
   }
 
 .toolbar-ios ion-title{
@@ -27,7 +31,7 @@ page-select-payment-method {
     font-weight: 800;
 }
 .toolbar-background-md {
-  background-color:#222;
+  background-color:#000;
 }
 
 .arrow{
@@ -104,7 +108,7 @@ page-select-payment-method {
   color:#fff;
   font-weight:100;
   align:right;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(#222,.5);
   height:36px;
   width:70%;
   margin: 15% auto;

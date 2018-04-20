@@ -1,6 +1,5 @@
 <ion-content scroll="false" style="background-image:url(../assets/img/background.jpg)">
-<ion-icon name="arrow-round-back" class="signupArrow"></ion-icon>
-<ion-label class="signupHeader">Sign Up</ion-label>
+<ion-label class="signupHeader" style="margin-bottom:15%;">Sign Up</ion-label>
 
     <ion-input type="text" placeholder="Username" style="text-align:center"></ion-input>
 
@@ -11,12 +10,12 @@
     <ion-input type="password" placeholder="Confirm Password" style="text-align:center"></ion-input>
 
 <div>
-  <button ion-button block (click)="signup()" class="navButton">Sign Up</button>
+  <button ion-button block (click)="doSignup()" class="navButton">Sign Up</button>
 <p class="welcomeText">
         Already have an account?
         <a (click)="login()" style="text-decoration:underline; color:#fff">
           Sign in!</a><br />
-          <a style="text-decoration:underline; color:#fff">
+          <a style="text-decoration:underline; color:#fff" (click)="termsAndServices()">
             Terms of Service</a>
 
 </p>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
 
 import { Tab1Root } from '../pages';
@@ -17,11 +17,13 @@ export class TabsPage {
   tab1Title = "TUTORS";
   tab2Title = "RENTALS";
   tab3Title = "COLLAB";
+  selectedTabIndex: number;
+  private firstLoaded: boolean = false;
 
-  constructor(public navCtrl: NavController, public translateService: TranslateService) {
+  constructor(public navCtrl: NavController, public translateService: TranslateService, public navParams: NavParams) {
+    this.selectedTabIndex = this.navParams.get('selectedTab');
+  }
 
-  }
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TutorSearchPage');
-  }
+
+
 }

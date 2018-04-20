@@ -1,14 +1,12 @@
 <ion-content scroll="false" style="background-image:url(../assets/img/background.jpg)">
-<ion-icon name="arrow-round-back" class="signupArrow"></ion-icon>
-<img src="../assets/img/Final Logo.png" class="welcomeLogo">
+<img src="../assets/img/Final Logo.png" class="welcomeLogo" style="padding-top:30px;">
 <ion-label class="signupHeader">Awesome, Thanks!</ion-label>
 
 <ion-label class="signupText">We have sent you a confirmation email with all your account information</ion-label>
 
 <div>
-  <button ion-button block (click)="signup()" class="navButton">Resend</button>
-  <button ion-button block (click)="signup()" class="navButton">Finish</button>
+  <button ion-button block (click)="resend()" class="navButton">Resend</button>
+  <button ion-button block (click)="profilePrompt()" class="navButton">Finish</button>
 
-<p class="welcomeText">Already have an account? <a (click)="login()" style="text-decoration:underline; color:#fff">Sign in!</a><br /><a style="text-decoration:underline; color:#fff">Terms of Service</a></p>
 </div>
 </ion-content>

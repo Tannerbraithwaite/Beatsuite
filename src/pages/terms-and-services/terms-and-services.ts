@@ -3,6 +3,8 @@ import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { IonicPage, NavController, ViewController , ModalController  } from 'ionic-angular';
 import { ItemCreatePage } from '../item-create/item-create';
 
+import {BeforeYouJoinPage} from '../before-you-join/before-you-join';
+
 @Component({
   selector: 'page-terms-and-services',
   templateUrl: 'terms-and-services.html',
@@ -14,9 +16,13 @@ export class TermsAndServicesPage {
 
   constructor(public navCtrl: NavController, public viewCtrl: ViewController,
     public modalCtrl: ModalController, formBuilder: FormBuilder) {}
-    testfun(){
-      console.log("Your button worked Motha Fucka");
+
+
+    beforeYouJoin(){
+      this.navCtrl.push(BeforeYouJoinPage)
     }
+
+
 }
 
   /**

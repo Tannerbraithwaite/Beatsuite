@@ -23,6 +23,7 @@ page-signup {
 
 
 
+
   input:-webkit-autofill:focus,
   input:-webkit-autofill:active,
   input:-webkit-autofill:hover,
@@ -34,7 +35,8 @@ page-signup {
   }
 
   ion-input, ion-textarea {
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid #666;
+      padding-bottom:10%;
   }
 
   ::-webkit-input-placeholder {
@@ -67,16 +69,22 @@ page-signup {
     font-size: 22px;
     width: 70%;
     margin-left: 0;
-    border-bottom-width:1px solid #333;
     margin:13px 0;
+    color:#fff;
+    text-align:center;
 }
 
 .text-input-ios {
     font-size: 22px;
     width: 70%;
     margin-left: 0;
-    border-bottom-width:1px solid #333;
     margin:13px 0;
+    color:#fff;
+    text-align:center;
+}
+
+.label-ios + ion-input .text-input, .label-ios + ion-textarea .text-input, .label-ios + .input + .cloned-input {
+    margin-left:0;
 }
 
 

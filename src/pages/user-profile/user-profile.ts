@@ -74,28 +74,8 @@ export class UserProfilePage {
    * The user cancelled, so we dismiss without sending data back.
    */
   cancel() {
-    this.viewCtrl.dismiss();
+    this.navCtrl.pop();
   }
 
-  /**
-   * The user is done and wants to create the item, so return it
-   * back to the presenter.
-   */
 
-
-  addGenre() {
-    /*
-    let addModal = this.modalCtrl.create('EditGenrePage');
-    addModal.onDidDismiss(genre => {
-      if (genre) {
-        this.genres.add(genre);
-      }
-    })
-    addModal.present();
-    */
-  }
-
-  addLocation() {
-
-  }
 }
